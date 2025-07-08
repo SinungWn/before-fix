@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>HMTE Unsoed</title>
+  <meta name="description" content="Website resmi HMTE Unsoed. Temukan informasi tentang Himpunan Mahasiswa Teknik Elektro Universitas Soedirman, kegiatan, dan berita terbaru."/>
+	
+  <!-- Styling -->
+  <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/satoshi.css" />
+
+  <!-- icon -->
+	<link
+		href="https://cdn.jsdelivr.net/npm/zremixicon@4.5.0/fonts/remixicon.css"
+		rel="stylesheet"
+	/>
+	<link rel="icon" type="image/png" href="img/hmte-icon.png" />
+
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	/>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWPL5RWLH5"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+
+		gtag("config", "G-GWPL5RWLH5");
+	</script>
+</head>
+
+<body>
+  	<header id="header">
+			<div class="header">
+				<a href="#home"><h2 class="nav-text-white font-bold text-[1.5em]">HMTE | UNSOED</h2></a>
+				<nav class="nav-contain">
+					<div class="navbar">
+						<ul id="nav_list">
+							<li><a href="index.html" class="nav-link nav-text-white">Home</a></li>
+							<li class="dropdown">
+								<a href="#berita" class="nav-drop nav-berita nav-text-white">Information <i class="fas fa-chevron-down"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="#" class="nav-link"target="_blank">Resource</a></li>
+									<li><a href="https://drive.google.com/drive/folders/1oueuRbrxhSpVH_7HQCoyHCRbyxKBhVY1?usp=sharing"class="nav-link"target="_blank">Database</a></li>
+									<li><a href="https://drive.google.com/drive/folders/1-DIdaGIVp7G0B-XE_9Hh1BG38qgScb6R"class="nav-link"target="_blank">Gallery</a></li>
+									<!-- <li><a href="#"class="nav-link"target="_blank">Events</a></li> -->
+								</ul>
+							</li>
+							<li><a href="kepengurusan.html" class="nav-link nav-text-white">Kepengurusan</a></li>
+							<li><a href="#" class="nav-link nav-text-white">Contact Us</a></li>
+						</ul>
+					</div>
+				</nav>
+				<button class="nav-toggle">
+					<div class="line"></div>
+					<div class="linee"></div>
+					<div class="lineee"></div>
+				</button>
+			</div>
+		</header>
+
+
+  <!-- Page Wrapper with Wider Horizontal Padding -->
+  <div class="container mx-auto px-12">
+
+    <!-- 1. Hero Section -->
+    <section class="flex flex-col lg:flex-row min-h-[68vh] py-2">
+      <!-- Left: Carousel -->
+      <div class="relative lg:w-1/2 w-full h-80 lg:h-auto overflow-hidden my-4 lg:my-12 mx-4 rounded-2xl">
+        <!-- Slide 1 -->
+        <div class="absolute inset-0">
+          <img src="https://th.bing.com/th/id/OIP.BUKBU3OEkRGQRWJrUS4P3QHaHa?w=178&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Org Photo 1" class="object-cover w-full h-full transition-opacity duration-700 opacity-100 carousel-slide" />
+          <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition-all duration-500 flex items-center justify-center">
+            <p class="text-white text-xl opacity-0 hover:opacity-100 transition-opacity duration-500 px-4 text-center z-20">
+              “Together We Achieve More”
+            </p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="absolute inset-0">
+          <img src="https://via.placeholder.com/1200x800" alt="Org Photo 2" class="object-cover w-full h-full transition-opacity duration-700 opacity-100 carousel-slide opacity-0 z-0" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="absolute inset-0">
+          <img src="https://th.bing.com/th/id/OIP.HpWMOpErvwDuPvODTLI7_AHaJJ?w=144&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Org Photo 3" class="object-cover w-full h-full transition-opacity duration-700 opacity-100 carousel-slide opacity-0 z-0" />
+
+        </div>
+        <!-- Navigation Arrows -->
+        <button id="prevBtn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-40 text-white p-1 rounded-full hover:bg-opacity-60 transition">
+          ‹
+        </button>
+        <button id="nextBtn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-40 text-white p-1 rounded-full hover:bg-opacity-60 transition">
+          ›
+        </button>
+      </div>
+      <!-- Right: Prolog Text -->
+      <div class="lg:w-1/2 w-full flex flex-col items-center justify-center text-center">
+        <h1 class="bg-clip-text text-transparent bg-gradient-to-b from-green-200 to-green-800 text-5vw lg:text-[5rem] font-extrabold leading-tight ">
+          Bersatu Berkarya
+        </h1>
+        <p class="bg-clip-text text-transparent bg-gradient-to-b from-green-200 to-green-800 text-lg lg:text-xl font-medium mt-4">
+          Empowering Innovation Together
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Vision & Mission Section -->
+    <section class="py-4 bg-gradient-to-b from-black to-gray-100 rounded-2xl">
+      <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-8">
+        <!-- Logo -->
+        <div class="flex-1 flex justify-center mx-4 ">
+          <img src="https://hmte.fmipa.unpad.ac.id/wp-content/uploads/2024/11/Logo-HMTE.png" alt="Organization Logo"
+               class="max-h-fit object-contain"/>
+        </div>
+        <!-- Vision -->
+        <div class="flex-1 mx-4">
+          <h3 class="text-2xl font-semibold mb-2">Our Vision</h3>
+          <p class="text-base leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nam!
+          </p>
+        </div>
+        <!-- Mission -->
+        <div class="flex-1 mx-4">
+          <h3 class="text-2xl font-semibold mb-2">Our Mission</h3>
+          <p class="text-base leading-relaxed">
+            Foster collaboration, deliver expertise, and empower every member to excel.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Team Section -->
+    <section class="py-16 bg-gradient-to-b from-black to-gray-100 rounded-2xl">
+      <h2 class="text-3xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-b from-green-200 to-green-800">Meet the Team</h2>
+      <div class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 px-4">
+        <!-- Team Member Card Template -->
+        <!-- Repeat for 8 members -->
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-2">
+          <div class="p-4 flex justify-center">
+            <div class="w-24 h-24 rounded-full overflow-hidden">
+              <img src="https://via.placeholder.com/150" alt="Member Name" class="object-cover w-full h-full"/>
+            </div>
+          </div>
+          <div class="text-center pb-4">
+            <h4 class="text-lg font-medium mb-1">Member Name</h4>
+            <a href="https://instagram.com/username" target="_blank" class="inline-flex items-center text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+              </svg>
+              @username
+            </a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-2">
+          <div class="p-4 flex justify-center">
+            <div class="w-24 h-24 rounded-full overflow-hidden">
+              <img src="https://via.placeholder.com/150" alt="Member Name" class="object-cover w-full h-full"/>
+            </div>
+          </div>
+          <div class="text-center pb-4">
+            <h4 class="text-lg font-medium mb-1">Member Name</h4>
+            <a href="https://instagram.com/username" target="_blank" class="inline-flex items-center text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+              </svg>
+              @username
+            </a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-2">
+          <div class="p-4 flex justify-center">
+            <div class="w-24 h-24 rounded-full overflow-hidden">
+              <img src="https://via.placeholder.com/150" alt="Member Name" class="object-cover w-full h-full"/>
+            </div>
+          </div>
+          <div class="text-center pb-4">
+            <h4 class="text-lg font-medium mb-1">Member Name</h4>
+            <a href="https://instagram.com/username" target="_blank" class="inline-flex items-center text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+              </svg>
+              @username
+            </a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-2">
+          <div class="p-4 flex justify-center">
+            <div class="w-24 h-24 rounded-full overflow-hidden">
+              <img src="https://via.placeholder.com/150" alt="Member Name" class="object-cover w-full h-full"/>
+            </div>
+          </div>
+          <div class="text-center pb-4">
+            <h4 class="text-lg font-medium mb-1">Member Name</h4>
+            <a href="https://instagram.com/username" target="_blank" class="inline-flex items-center text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+              </svg>
+              @username
+            </a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-2">
+          <div class="p-4 flex justify-center">
+            <div class="w-24 h-24 rounded-full overflow-hidden">
+              <img src="https://via.placeholder.com/150" alt="Member Name" class="object-cover w-full h-full"/>
+            </div>
+          </div>
+          <div class="text-center pb-4">
+            <h4 class="text-lg font-medium mb-1">Member Name</h4>
+            <a href="https://instagram.com/username" target="_blank" class="inline-flex items-center text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+              </svg>
+              @username
+            </a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-2">
+          <div class="p-4 flex justify-center">
+            <div class="w-24 h-24 rounded-full overflow-hidden">
+              <img src="https://via.placeholder.com/150" alt="Member Name" class="object-cover w-full h-full"/>
+            </div>
+          </div>
+          <div class="text-center pb-4">
+            <h4 class="text-lg font-medium mb-1">Member Name</h4>
+            <a href="https://instagram.com/username" target="_blank" class="inline-flex items-center text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+              </svg>
+              @username
+            </a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-2">
+          <div class="p-4 flex justify-center">
+            <div class="w-24 h-24 rounded-full overflow-hidden">
+              <img src="https://via.placeholder.com/150" alt="Member Name" class="object-cover w-full h-full"/>
+            </div>
+          </div>
+          <div class="text-center pb-4">
+            <h4 class="text-lg font-medium mb-1">Member Name</h4>
+            <a href="https://instagram.com/username" target="_blank" class="inline-flex items-center text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+              </svg>
+              @username
+            </a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-2">
+          <div class="p-4 flex justify-center">
+            <div class="w-24 h-24 rounded-full overflow-hidden">
+              <img src="https://via.placeholder.com/150" alt="Member Name" class="object-cover w-full h-full"/>
+            </div>
+          </div>
+          <div class="text-center pb-4">
+            <h4 class="text-lg font-medium mb-1">Member Name</h4>
+            <a href="https://instagram.com/username" target="_blank" class="inline-flex items-center text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+              </svg>
+              @username
+            </a>
+          </div>
+        </div>
+        <!-- Repeat block above 7 more times with different images/names -->
+      </div>
+    </section>
+
+    <!-- Optional Footer
+    <footer class="bg-gray-900 text-gray-400 py-10">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        Contact Info
+        <div>
+          <h5 class="font-semibold text-white mb-2">Contact Us</h5>
+          <p>email@organization.org</p>
+          <p>+62 812-3456-7890</p>
+        </div>
+        Social Links
+        <div class="flex items-center justify-center space-x-6">
+          <a href="#" aria-label="Instagram" class="hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="hover:text-white">
+            Twitter SVG
+          </a>
+          <a href="#" aria-label="LinkedIn" class="hover:text-white">
+            LinkedIn SVG
+          </a>
+        </div>
+        Copyright
+        <div class="text-center md:text-right">
+          <p>© 2025 Himpunan Teknik Elektro</p>
+        </div>
+      </div>
+    </footer> -->
+
+  </div> <!-- /Page Wrapper -->
+</body>
+</html>
+
+<script src="js/script.js"></script>
+
+
+ <script>
+  const slides = document.querySelectorAll(".carousel-slide");
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("opacity-100", i === index);
+      slide.classList.toggle("opacity-0", i !== index);
+      slide.classList.toggle("z-10", i === index);
+      slide.classList.toggle("z-0", i !== index);
+    });
+  }
+
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  });
+
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  });
+
+  showSlide(currentSlide); // initial display
+</script>
