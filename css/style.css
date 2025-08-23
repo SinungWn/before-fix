@@ -19,6 +19,11 @@
 .nav-text-white {
 	color: white;
 }
+.nav-text-white-left{
+	color: white;          /* nav-text-white */
+  	font-weight: bold;     /* font-bold */
+ 	font-size: 1.2em;       /* text-[1.2em] */
+}
 
 .home-text-white {
 	color: white;
@@ -96,6 +101,17 @@ body {
 	display: flex;
 	align-items: center;
 	min-width: 50%;
+}
+.logo-navbar {
+  height: 48px; /* setara dengan h-12 Tailwind = 3rem = 48px */
+  width: auto;  /* agar rasio gambar tetap terjaga */
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* setara dengan Tailwind space-x-2 */
+  text-decoration: none;
+  color: white;
 }
 .nav-toggle {
 	display: none;
