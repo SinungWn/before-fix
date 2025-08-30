@@ -22,6 +22,11 @@
     href="css/style.css"
   ></link>
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
   <link
     rel="stylesheet"
     href="css/satoshi.css"
@@ -196,48 +201,104 @@
   <div class="container mx-auto px-12">
     <!-- 1. Hero Section -->
 
-    <section class="fade-in flex flex-col lg:flex-row min-h-[68vh]   py-2 lg:py-8 select-none">
+    <section class="fade-in flex flex-col lg:flex-row lg:py-4 select-none">
       <!-- min-h- dapat diganti aspect-video, tapi ada space di bawah gambarnya pas dihover berlaku kebalikannya -->
       <!-- dikasih lg:py-16 biar ada space antara hero sama visi misi -->
       <!-- Left: Carousel -->
 
-      <div class="relative z-0 lg:w-cover h-cover overflow-hidden my-4 lg:my-12 mx-4 rounded-2xl">
-        <img
-          id="carousel-img"
-          src=""
-          alt="Hero Slide"
-          class="object-cover w-full h-full transition-opacity duration-700 rounded-2xl shadow-md"
-        >
-
-        <!-- Overlay -->
-
-        <div class="fade-in inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition-all duration-500 flex items-center justify-center">
-          <p class="text-white text-3xl opacity-0 hover:opacity-100 transition-opacity duration-500 px-4 text-center">“Together We Achieve More”</p>
+      <div class="overflow-hidden lg:my-12 mx-4 rounded-2xl">
+        <div class="relative hero-swiper">
+          <div class="swiper progress-slide-carousel swiper-container relative">
+            <div class="swiper-wrapper lg:w-full h-auto">
+              <div class="swiper-slide">
+                <div class="rounded-2xl w-full flex justify-center items-center">
+                  <span class="text-3xl font-semibold text-indigo-600">
+                    <img src="img/g2.JPG" alt="Profil1" class="items-center object-cover w-full h-full transition-opacity duration-700 rounded-2xl shadow-md">
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl w-full flex justify-center items-center">
+                  <span class="text-3xl font-semibold text-indigo-600">
+                    <img src="img/g3.jpg" alt="Profil2" class="items-center object-cover w-full h-full transition-opacity duration-700 rounded-2xl shadow-md">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!-- Navigation Arrows -->
-
-        <button
-          onclick="prevHero()"
-          class="absolute z-10 top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-40 text-white p-1 rounded-full hover:bg-opacity-60 transition"
-        >‹</button>
-
-        <button
-          onclick="nextHero()"
-          class="absolute z-10 top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-40 text-white p-1 rounded-full hover:bg-opacity-60 transition"
-        >›</button>
       </div>
 
       <!-- Right: Prolog Text -->
 
-      <div class="lg:w-1/2 w-full flex flex-col items-center justify-center text-center">
-        <h1 class="bg-clip-text text-transparent bg-gradient-to-b from-green-200 to-green-600 text-5vw lg:text-[5rem] font-extrabold leading-tight">Kabinet <br>Parama Astra</h1>
+      <div class="w-full flex flex-col items-center justify-center text-center">
+        <h1 class="bg-clip-text text-transparent bg-gradient-to-b from-green-200 to-green-600 text-[5rem] font-extrabold leading-tight">Kabinet <br>Parama Astra</h1>
 
         <p class="bg-clip-text text-transparent bg-gradient-to-b from-green-200 to-green-500 text-lg lg:text-xl font-medium mt-4">
           Kolaborasi Untuk Inovasi
         </p>
       </div>
     </section>
+
+
+    <!-- Tambahan Filosofi Logo  -->
+    <section class="select-none">
+      <div class="relative w-full flex justify-center items-center fade-in">
+        <h2 class="text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-green-200 to-green-800 select-none leading-relaxed">
+          Filosofi Logo
+        </h2>
+      </div>
+
+      <div class="w-full relative fade-in h-full">
+        <div class="swiper centered-slide-carousel swiper-container relative ">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+        <div class="swiper-slide items-center flex-col flex justify-center text-center">
+          <img class="rounded-t-2xl max-w-xs md:max-w-sm h-auto" src="img/Asset Logo/Logo1.svg" alt="Spiral"/>
+          <div class="">
+            <h1 class="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-green-200 to-green-800 leading-relaxed">Kepala Singa</h1>
+            <p class="text-gray-300 object-center text-center text-lg px-24">
+              Logo kepala singa melambangkan keberanian, kekuatan, dan kepemimpinan yang tegas sebagai identitas himpunan. Dipadukan dengan spiral hijau, logo ini merepresentasikan sinergi delapan divisi yang bersatu untuk mencapai visi bersama.
+            </p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="swiper-slide items-center flex-col flex justify-center text-center">
+          <img class="rounded-t-2xl max-w-xs md:max-w-sm h-auto" src="img/Asset Logo/Logo2.svg" alt="Spiral"/>
+          <div class="">
+            <h1 class="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-green-200 to-green-800 leading-relaxed">Delapan Spiral</h1>
+            <p class="text-gray-300 object-center text-center text-lg px-24">
+              Spiral menjadi simbol sinergi delapan divisi HMTE, sekaligus lambang keberanian dan kepemimpinan.
+            </p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="swiper-slide items-center flex-col flex justify-center text-center">
+          <img class="rounded-t-2xl max-w-xs md:max-w-sm h-auto" src="img/Asset Logo/Logo3.svg" alt="Spiral"/>
+          <div class="">
+            <h1 class="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-green-200 to-green-800 leading-relaxed">Siluet Huruf A</h1>
+            <p class="text-gray-300 object-center text-center text-lg px-24">
+              Siluet A melambangkan Astra sebagai simbol kejayaan, inovasi berkelanjutan, dan kepemimpinan yang visioner.
+            </p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="swiper-slide items-center flex-col flex justify-center text-center">
+          <img class="rounded-t-2xl max-w-xs md:max-w-sm h-auto" src="img/Asset Logo/Logo4.svg" alt="Spiral"/>
+          <div class="">
+            <h1 class="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-green-200 to-green-800 leading-relaxed">Siluet Huruf P</h1>
+            <p class="text-gray-300 object-center text-center text-lg px-24">
+              Bentuk siluet huruf P melambangkan identitas Parama yang berkomitmen menghadirkan kepemimpinan dan inovasi terbaik.
+            </p>
+          </div>
+        </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- END of Tambahan Filosofi Logo  -->
+
 
     <!-- 2. Vision & Mission Section -->
 
@@ -305,7 +366,7 @@
                 class="max-h-fit object-center"
               >
             </div>
-            <h4 class="text-xl font-bold text-green-300 tracking-wide uppercase select-none mb-2">BPH</h4>
+            <h1 class="text-2x1 font-bold text-center text-green-300 tracking-wide uppercase select-none mb-2">BPH</h4>
             <p class="text-sm text-gray-300 text-center">Badan Pengurus Harian</p>
           </div>
         </div>
@@ -320,7 +381,7 @@
                 class="max-h-fit object-center"
               >
             </div>
-            <h4 class="text-xl font-bold text-green-300 tracking-wide uppercase select-none mb-2">HUMAS</h4>
+            <h1 class="text-2x1 font-bold text-center text-green-300 tracking-wide uppercase select-none mb-2">HUMAS</h4>
             <p class="text-sm text-gray-300 text-center">Hubungan Masyarakat</p>
           </div>
         </div>
@@ -335,7 +396,7 @@
                 class="max-h-fit object-center"
               >
             </div>
-            <h4 class="text-xl font-bold text-green-300 tracking-wide uppercase select-none mb-2">KWU</h4>
+            <h1 class="text-2x1 font-bold text-center text-green-300 tracking-wide uppercase select-none mb-2">KWU</h4>
             <p class="text-sm text-gray-300 text-center">Kewirausahaan</p>
           </div>
         </div>
@@ -350,7 +411,7 @@
                 class="max-h-fit object-center"
               >
             </div>
-            <h4 class="text-xl font-bold text-green-300 tracking-wide uppercase select-none mb-2">RISTEK</h4>
+            <h1 class="text-2x1 font-bold text-center text-green-300 tracking-wide uppercase select-none mb-2">RISTEK</h4>
             <p class="text-sm text-gray-300 text-center">Riset & Teknologi</p>
           </div>
         </div>
@@ -365,7 +426,7 @@
                 class="max-h-fit object-center"
               >
             </div>
-            <h4 class="text-xl font-bold text-green-300 tracking-wide uppercase select-none mb-2">MEDKOMINFO</h4>
+            <h1 class="text-2x1 font-bold text-center text-green-300 tracking-wide uppercase select-none mb-2">MEDKOMINFO</h4>
             <p class="text-sm text-gray-300 text-center">Media & Komunikasi</p>
           </div>
         </div>
@@ -380,7 +441,7 @@
                 class="max-h-fit object-center"
               >
             </div>
-            <h4 class="text-xl font-bold text-green-300 tracking-wide uppercase select-none mb-2">MIKAT</h4>
+            <h1 class="text-2x1 font-bold text-center text-green-300 tracking-wide uppercase select-none mb-2">MIKAT</h4>
             <p class="text-sm text-gray-300 text-center">Minat & Bakat</p>
           </div>
         </div>
@@ -395,7 +456,7 @@
                 class="max-h-fit object-center"
               >
             </div>
-            <h4 class="text-xl font-bold text-green-300 tracking-wide uppercase select-none mb-2">PSDM</h4>
+            <h1 class="text-2x1 font-bold text-center text-green-300 tracking-wide uppercase select-none mb-2">PSDM</h4>
             <p class="text-sm text-gray-300 text-center">Pengembangan Sumber Daya Manusia</p>
           </div>
         </div>
@@ -410,7 +471,7 @@
                 class="max-h-fit object-center"
               >
             </div>
-            <h4 class="text-xl font-bold text-green-300 tracking-wide uppercase select-none mb-2">INTERNAL</h4>
+            <h1 class="text-2x1 font-bold text-center text-green-300 tracking-wide uppercase select-none mb-2">INTERNAL</h4>
             <p class="text-sm text-gray-300 text-center">Urusan Internal</p>
           </div>
         </div>
@@ -437,8 +498,8 @@
           
           <!-- Left side - Image slider -->
           <div class="w-full lg:w-1/2 relative bg-gradient-to-br from-gray-800 to-gray-700 flex items-center justify-center">
-            <div class="relative h-auto flex items-center justify-center">
-              <img id="popupImage" src="" alt="Divisi Image" class="max-w-full max-h-full ">
+            <div class="max-w-fit max-h-fit items-center">
+              <img id="popupImage" src="" alt="Divisi Image" class="w-full flex-shrink-0 object-contain max-lg:h-[325px] max-md:h-full">
               
               <!-- Navigation buttons -->
               <button onclick="prevPopupImage()" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300">
@@ -490,7 +551,7 @@
 
   <!-- /Page Wrapper -->
 </body>
-<footer class="bg-[#0d121e] text-white block border-t border-gray-600">
+<footer class="text-white block border-t border-gray-600">
   <div class="max-w-7xl mx-auto px-10 lg:px-20 py-8 grid grid-cols-1 md:grid-cols-3 justify-items-center text-left md:text-left">
 
     <!-- Bagian 1: Identitas & Deskripsi -->
@@ -498,7 +559,7 @@
       <div class="flex items-center mb-4 justify-center md:justify-start space-x-2">
         <img src="img/logohmte.webp" alt="Logo HMTE" class="w-14 h-14 rounded-full object-cover" />
         <div>
-          <h4 class="text-xl font-bold">HMTE</h4>
+          <h1 class="text-2x1 font-bold justify-start">HMTE</h4>
           <p class="text-sm text-gray-300 justify-start">Himpunan Mahasiswa Teknik Elektro</p>
         </div>
       </div>
@@ -565,8 +626,7 @@
 <script src="js/script.js"></script>
 <script src="js/emagz.js"></script>
 
-<script>
-  // Gambar carousel
+<!-- <script>
   const heroImages = [
     "img/g2.JPG",
     "img/g3.jpg"
@@ -591,10 +651,23 @@
     showHeroImage(heroIndex);
   }
 
-  // Inisialisasi
   document.addEventListener("DOMContentLoaded", () => {
     showHeroImage(heroIndex);
   });
+</script> -->
+
+<script>
+var heroSwiper = new Swiper(".hero-swiper .progress-slide-carousel", {
+  loop: true,
+  autoplay: {
+    delay: 3200,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".hero-swiper .swiper-pagination",
+    type: "progressbar",
+  },
+});
 </script>
 
 <!-- <script>
@@ -643,8 +716,10 @@
         icon: '<i class="fas fa-crown text-2xl text-yellow-400"></i>',
         iconBg: 'bg-gradient-to-br from-emerald-600 to-emerald-800',
         images: [
-          "img/54.png",
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=60"
+          "img/Asset Feed/BPH/1.png",
+          "img/Asset Feed/BPH/2.png",
+          "img/Asset Feed/BPH/3.png",
+          "img/Asset Feed/BPH/4.png"
         ],
         proker: [
           {
@@ -667,8 +742,13 @@
         icon: '<i class="fas fa-users text-2xl text-white"></i>',
         iconBg: 'bg-gradient-to-br from-blue-600 to-blue-800',
         images: [
-          "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format&fit=crop&q=60",
-          "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&auto=format&fit=crop&q=60"
+          "img/Asset Feed/HUMAS/1.png",
+          "img/Asset Feed/HUMAS/2.png",
+          "img/Asset Feed/HUMAS/3.png",
+          "img/Asset Feed/HUMAS/4.png",
+          "img/Asset Feed/HUMAS/5.png",
+          "img/Asset Feed/HUMAS/6.png",
+          "img/Asset Feed/HUMAS/7.png"
         ],
         proker: [
           {
@@ -691,8 +771,12 @@
         icon: '<i class="fas fa-briefcase text-2xl text-white"></i>',
         iconBg: 'bg-gradient-to-br from-purple-600 to-purple-800',
         images: [
-          "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&auto=format&fit=crop&q=60",
-          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=60"
+          "img/Asset Feed/KWU/1.png",
+          "img/Asset Feed/KWU/2.png",
+          "img/Asset Feed/KWU/3.png",
+          "img/Asset Feed/KWU/4.png",
+          "img/Asset Feed/KWU/5.png",
+          "img/Asset Feed/KWU/6.png"
         ],
         proker: [
           {
@@ -719,8 +803,16 @@
         icon: '<i class="fas fa-laptop-code text-2xl text-white"></i>',
         iconBg: 'bg-gradient-to-br from-red-600 to-red-800',
         images: [
-          "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60",
-          "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&auto=format&fit=crop&q=60"
+          "img/Asset Feed/RISTEK/1.png",
+          "img/Asset Feed/RISTEK/2.png",
+          "img/Asset Feed/RISTEK/3.png",
+          "img/Asset Feed/RISTEK/4.png",
+          "img/Asset Feed/RISTEK/5.png",
+          "img/Asset Feed/RISTEK/6.png",
+          "img/Asset Feed/RISTEK/7.png",
+          "img/Asset Feed/RISTEK/8.png",
+          "img/Asset Feed/RISTEK/9.png",
+          "img/Asset Feed/RISTEK/10.png"
         ],
         proker: [
           {
@@ -743,8 +835,13 @@
         icon: '<i class="fas fa-camera text-2xl text-white"></i>',
         iconBg: 'bg-gradient-to-br from-orange-600 to-orange-800',
         images: [
-          "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&auto=format&fit=crop&q=60",
-          "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop&q=60"
+          "img/Asset Feed/MEDKOM/1.png",
+          "img/Asset Feed/MEDKOM/2.png",
+          "img/Asset Feed/MEDKOM/3.png",
+          "img/Asset Feed/MEDKOM/4.png",
+          "img/Asset Feed/MEDKOM/5.png",
+          "img/Asset Feed/MEDKOM/6.png",
+          "img/Asset Feed/MEDKOM/7.png"
         ],
         proker: [
           {
@@ -767,8 +864,12 @@
         icon: '<i class="fas fa-gamepad text-2xl text-white"></i>',
         iconBg: 'bg-gradient-to-br from-teal-600 to-teal-800',
         images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop&q=60",
-          "https://images.unsplash.com/photo-1605711285791-0219e80e43a3?w=800&auto=format&fit=crop&q=60"
+          "img/Asset Feed/MIKAT/1.png",
+          "img/Asset Feed/MIKAT/2.png",
+          "img/Asset Feed/MIKAT/3.png",
+          "img/Asset Feed/MIKAT/4.png",
+          "img/Asset Feed/MIKAT/5.png",
+          "img/Asset Feed/MIKAT/6.png"
         ],
         proker: [
           {
@@ -791,8 +892,12 @@
         icon: '<i class="fas fa-user-graduate text-2xl text-white"></i>',
         iconBg: 'bg-gradient-to-br from-indigo-600 to-indigo-800',
         images: [
-          "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&auto=format&fit=crop&q=60",
-          "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&auto=format&fit=crop&q=60"
+          "img/Asset Feed/PSDM/1.png",
+          "img/Asset Feed/PSDM/2.png",
+          "img/Asset Feed/PSDM/3.png",
+          "img/Asset Feed/PSDM/4.png",
+          "img/Asset Feed/PSDM/5.png",
+          "img/Asset Feed/PSDM/6.png"
         ],
         proker: [
           {
@@ -810,13 +915,20 @@
         ]
       },
       internal: {
-        title: "Urusan Internal",
+        title: "Internal",
         description: "Divisi Internal HMTE Unsoed hadir untuk mempererat kebersamaan dan membangun solidaritas antar mahasiswa Teknik Elektro. Lewat berbagai program kerja, Internal menjadi ruang tumbuh yang mendukung mahasiswa berkembang, menyalurkan ide, dan mengasah kreativitas bersama.",
         icon: '<i class="fas fa-home text-2xl text-white"></i>',
         iconBg: 'bg-gradient-to-br from-pink-600 to-pink-800',
         images: [
-          "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&auto=format&fit=crop&q=60",
-          "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop&q=60"
+          "img/Asset Feed/INTERNAL/1.png",
+          "img/Asset Feed/INTERNAL/2.png",
+          "img/Asset Feed/INTERNAL/3.png",
+          "img/Asset Feed/INTERNAL/4.png",
+          "img/Asset Feed/INTERNAL/5.png",
+          "img/Asset Feed/INTERNAL/6.png",
+          "img/Asset Feed/INTERNAL/7.png",
+          "img/Asset Feed/INTERNAL/8.png",
+          "img/Asset Feed/INTERNAL/9.png"
         ],
         proker: [
           {
@@ -923,4 +1035,32 @@
 
     // Initialize when DOM is loaded
     document.addEventListener('DOMContentLoaded', observeElements);
+</script>
+
+<script>
+var swiper = new Swiper(".centered-slide-carousel", {
+ centeredSlides: true,
+ paginationClickable: true,
+ spaceBetween: 50,
+ loop: true,
+ slideToClickedSlide: true,
+ pagination: {
+   el: ".centered-slide-carousel .swiper-pagination",
+   clickable: true,
+ },
+ breakpoints: {
+   1920: {
+     slidesPerView: 1,
+     spaceBetween: 0
+   },
+   1028: {
+     slidesPerView: 1,
+     spaceBetween: 0
+   },
+   990: {
+     slidesPerView: 1,
+     spaceBetween: 0
+   }
+ }
+});
 </script>
