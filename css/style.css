@@ -778,17 +778,30 @@ footer {
 }
 
 /* Swiper-Logo Profile Kabinet*/
-.swiper-wrapper {
-	width: 100%;
-	height: max-content !important;
-	padding-bottom: 64px !important;
-	-webkit-transition-timing-function: linear !important;
-	transition-timing-function: linear !important;
-	position: relative;
+.swiper-wrapper.filosofi-wrapper {
+  width: 100%;
+  height: 100%; /* jangan max-content */
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: ease-in-out !important;
+  transition-timing-function: ease-in-out !important;
+  position: relative;
 }
-.swiper-pagination-bullet {
+
+.swiper-pagination-bullet.filosofi-wrapper{
 	background: #3266d4;
+	transition: background 0.5s ease;
 }
+
+.swiper-slide.filosofi-wrapper{
+  opacity: 0;
+  transform: scale(0.2);
+}
+
+.swiper-slide-active.filosofi-wrapper{
+  opacity: 1;
+  transform: scale(0.5);
+}
+
 .swiper-pagination-bullet-active {
 	background: #735aef !important;
 }
